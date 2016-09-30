@@ -7,7 +7,7 @@
 body {
     background: #b3dbe8;
     color: #000;
-    font-family: sans-serif; /*   add fonts here   */
+    font-family: Arimo, Arial, sans-serif; /*   add fonts here   */
     font-size: 100%; /* DO NOT change */
     margin: 0; /* DO NOT change */
 }
@@ -21,6 +21,7 @@ body {
 #container {
     max-width: 1280px;
     margin: 2% auto;
+		max-width: 100%;
 }
 
 article {
@@ -48,7 +49,7 @@ aside {
 
 h1, h2 {
     margin: 0;
-    font-family: serif;  /*   add fonts here   */
+    font-family: Domine, Times, serif;  /*   add fonts here   */
 }
 
 article h1 {
@@ -111,3 +112,11 @@ aside a:focus, aside a:hover {
 }
 
 /* media queries */
+@media (max-width: 750px) {
+	#sidebar2, #container { margin: 0; }
+	article, aside { float: none;
+		margin: 0;
+		width: 100%;}
+	img { display: none; }
+	#top-image-container p {display: none;}
+}
